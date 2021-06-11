@@ -32,3 +32,74 @@ html {
     font-family: "DM Sans", "sans-serif";
 }
 
+/* header styles */
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+header div.header--title-container {
+    width: 90%;
+    height: 218px;
+    min-width: 288px;
+    max-width: 900px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+header div.header--title-container h1 {
+    font-weight: bold;   
+    font-size: 2.4rem;
+    line-height: 26px;
+    color: var(--just-white);
+    margin-bottom: 25px;
+}
+
+header div.header--title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--soft-orange);
+}
+
+header div.header--title-container a.header--button {
+    position: absolute; top: 270px; left: calc(50% - 118px);
+    margin-top: 35px;
+    display: block;
+    width: 229px;
+    height: 48px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--warm-black);
+    text-decoration: none;
+    padding: 15px;
+    background-color: var(--off-white);
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px rgba(89,73,30,0.16);
+    border: none;
+}
+
+header div.header--title-container span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("../Assets/Icons/DownArrow.svg");
+}

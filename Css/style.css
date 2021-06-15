@@ -418,6 +418,7 @@ section.bitcoin-image h2 {
 section.main-plans--container {
     width: 100%;
     min-width: 320px;
+    margin: 0 auto;
     padding-bottom: 70px;
     text-align: center;
     background-color: var(--off-white);
@@ -442,7 +443,6 @@ section.main-plans--container .plans--title h2 {
 
 section.main-plans--container .plans--title p {
     margin-top: 30px;
-    margin-bottom: 40px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
@@ -451,12 +451,12 @@ section.main-plans--container .plans--title p {
 
 .plans-container-slider--card {
     position: relative;
-    margin: 0 auto;
+    scroll-snap-align: center;
+    margin: 50px 5px auto;
     width: 70%;
-    min-width: 230px;
-    max-width: 300px;
+    min-width: 190px;
+    max-width: 250px;
     height: 250px;
-    margin-top: 50px;
     padding: 0 15px;
     border-radius: 10px;
     background-color: var(--just-white);
@@ -515,7 +515,7 @@ p.plan-card--price sup {
     width: 151px;
     height: 48px;
     margin: 0 auto;
-    font-family: "DM Sans", "sans-serif";;
+    font-family: "DM Sans", "sans-serif";
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.82rem;
@@ -536,4 +536,82 @@ p.plan-card--price sup {
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: -8px;
+}
+
+/* slider */
+
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container--slider::-webkit-scrollbar {
+    height: 3px;
+  }
+
+.plans-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
+
+/* slider tables */
+
+.main-tables-container {
+    display: flex;
+    height: 450px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.main-tables-container::-webkit-scrollbar {
+    height: 3px;
+  }
+
+.main-tables-container::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-blue);
+}
+
+.main-comissions-table {
+    margin: 0 45px;
+}
+
+.main-currency-table {
+    margin: 0 45px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+footer section ul {
+    list-style: none;
+}
+
+footer section ul li {
+    margin: 10px 0;
+}
+
+footer section ul a {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: white;
+    text-decoration: none;
 }

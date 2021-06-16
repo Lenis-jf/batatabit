@@ -2,6 +2,7 @@
     justify-content: center;
     width: 685px;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .main-tables-container::-webkit-scrollbar {

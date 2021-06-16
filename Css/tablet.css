@@ -1,3 +1,9 @@
 .plans-container--slider {
     justify-content: center;
 }
+
+.main-tables-container {
+    overflow-x: none;
+    overscroll-behavior-x: none;
+    margin-bottom: 40px;
+}

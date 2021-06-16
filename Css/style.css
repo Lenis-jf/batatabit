@@ -157,13 +157,9 @@ section.main-exchange-container p {
     max-width: 500px;
     height: 360px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     font-family: "Inter", "sans-serif";
     text-align: center;
-}
-
-.main-comissions-table {
-    margin-bottom: 80px;
 }
 
 .main-currency-table .main-currency-table--title {
@@ -399,7 +395,7 @@ section.bitcoin-image {
     min-width: 320px;
     height: 50vh;
     text-align: center;
-    background-image: url("../Assets/Images/BitcoinGirlx2.png");
+    background-image: url("../Assets/Images/BitcoinGirlx4.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -524,6 +520,12 @@ p.plan-card--price sup {
     border-radius: 5px;
     border: var(--bitcoin-orange) 2px solid;
     background-color: var(--off-white);
+    cursor: pointer;
+}
+
+.plan-card--call-to-action:hover {
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
 }
 
 .plan-card--call-to-action span {
@@ -549,10 +551,11 @@ p.plan-card--price sup {
 }
 
 .plans-container--slider::-webkit-scrollbar {
-    height: 3px;
-  }
+    height: 4px;
+}
 
 .plans-container--slider::-webkit-scrollbar-thumb {
+    border-radius: 4px;
     background-color: var(--bitcoin-orange);
 }
 
@@ -560,26 +563,21 @@ p.plan-card--price sup {
 
 .main-tables-container {
     display: flex;
-    height: 450px;
+    height: 400px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-}
-
-.main-tables-container::-webkit-scrollbar {
-    height: 3px;
-  }
-
-.main-tables-container::-webkit-scrollbar-thumb {
-    background-color: var(--secondary-blue);
+    padding-left: calc(50% - 115px);
+    padding-right: calc(50% - 115px);
+    margin-bottom: 40px;
 }
 
 .main-comissions-table {
-    margin: 0 45px;
+    margin-right: 10px;
 }
 
 .main-currency-table {
-    margin: 0 45px;
+    margin-right: 10px;
 }
 
 /* footer */
@@ -614,4 +612,9 @@ footer section ul a {
     line-height: 1.8rem;
     color: white;
     text-decoration: none;
+}
+
+footer section img {
+    width: 64px;
+    height: 50px;
 }
